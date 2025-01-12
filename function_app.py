@@ -9,8 +9,6 @@ def http_trigger1(req: func.HttpRequest) -> func.HttpResponse:
 
 
 
-
-
     resume_content = """
     Thien Ong's Resume
 
@@ -18,7 +16,7 @@ def http_trigger1(req: func.HttpRequest) -> func.HttpResponse:
 
     Contact Information:
     - Email: t.ong25@ncf.edu
-    - GitHub: <a href="https://github.com/sannouki">https://github.com/sannouki</a>
+    - GitHub link: https://github.com/sannouki
 
     Education:
     - Bachelor of Arts in Computer Science (Expected May 2026)
