@@ -7,6 +7,10 @@ app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
 def http_trigger1(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
+
+
+
+
     resume_content = """
     Thien Ong's Resume
 
@@ -14,7 +18,7 @@ def http_trigger1(req: func.HttpRequest) -> func.HttpResponse:
 
     Contact Information:
     - Email: t.ong25@ncf.edu
-    - GitHub: https://github.com/sannouki
+    - GitHub: <a href="https://github.com/sannouki">https://github.com/sannouki</a>
 
     Education:
     - Bachelor of Arts in Computer Science (Expected May 2026)
