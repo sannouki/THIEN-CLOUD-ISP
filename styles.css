@@ -6,11 +6,17 @@ body {
 h1 {
     color: #333;
 }
-
-h2 {
-    color: #555;
+.introsubheader {
+    font-size: 36px; 
+    color: #6b4e10; 
+    font-weight: bold;
+    margin: 0;
 }
-
+.contactinfo {
+    font-size: 20px; 
+    color: #105; 
+    font-weight: bold;
+}
 ul {
     list-style-type: none;
     padding: 0;
@@ -27,4 +33,13 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Add styles for the image */
+img.profile {
+    max-width: 30px; /* Adjust the image size */
+    border-radius: 50%; /* Make it circular */
+    float: right; /* Align it to the right */
+    margin-left: 20px; /* Add spacing between the image and text */
+    /* #margin-bottom: 20px; Add spacing below the image */
 }
