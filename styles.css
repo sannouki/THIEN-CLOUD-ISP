@@ -44,3 +44,32 @@ img.profile {
     margin-left: 20px; /* Add spacing between the image and text */
     /* #margin-bottom: 20px; Add spacing below the image */
 }
+
+
+/* Tracker styles */
+#tracker {
+    margin-top: 20px;
+    padding: 10px;
+    
+    /*background-color: #f9f9f9;*/
+    text-align: center;
+}
+
+#tracker p {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+#tracker button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#tracker button:hover {
+    background-color: #004999;
+}
