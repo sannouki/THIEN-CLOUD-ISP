@@ -1,0 +1,29 @@
+name: Deploy WebGL to Azure Storage
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository with LFS
+        uses: actions/checkout@v3
+        with:
+          lfs: true
+
+      - name: Login to Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Pull LFS Files
+        run: git lfs pull
+
+      - name: Upload to Azure Storage
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az storage blob upload-batch --account-name 2dispgame --destination '$web' --source . --auth-mode login --overwrite 
